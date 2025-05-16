@@ -1,0 +1,9 @@
+<IfModule mod_headers.c>
+    Header set Access-Control-Allow-Origin "*"
+    Header set Access-Control-Allow-Headers "Origin, Content-Type, Accept, Authorization"
+    Header set Access-Control-Allow-Methods "GET, POST, OPTIONS"
+</IfModule>
+
+<IfModule mod_authz_core.c>
+    Require all granted
+</IfModule>
